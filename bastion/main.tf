@@ -82,3 +82,7 @@ resource "aws_eip" "bastion" {
 output "external_ip" {
   value = "${aws_eip.bastion.public_ip}"
 }
+
+output "private_ip" {
+  value = "${aws_instance.bastion.private_ip}"
+}
