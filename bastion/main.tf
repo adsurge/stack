@@ -54,7 +54,7 @@ module "ami" {
   source        = "github.com/terraform-community-modules/tf_aws_ubuntu_ami/ebs"
   region        = "${var.region}"
   distribution  = "xenial"
-  storagetype   = "ssd"
+  storagetype   = "ebs-ssd"
   instance_type = "${var.instance_type}"
 }
 
